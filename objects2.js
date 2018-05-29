@@ -5,8 +5,11 @@ let person = {
   age: 26,
   weekendAlarm: 'No alarms needed',
   weekAlarm: 'Alarm set to 7AM',
-  sayHello: () => {
-    return 'Hello, there!'
+  sayHello: function () {
+    return `Hello, my name is ${this.name}`
+  },
+  sayGoodbye() {
+    return 'Goodbye!';
   }
 };
 
@@ -33,12 +36,4 @@ person.hobbies = ['taekwondo'];
 
 console.log(person.hobbies);
 console.log(person.sayHello());
-
-
-
-
-
-
-
-
-
+console.log(person.sayGoodbye());
