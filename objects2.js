@@ -5,13 +5,19 @@ let person = {
   age: 26,
   weekendAlarm: 'No alarms needed',
   weekAlarm: 'Alarm set to 7AM',
-  sayHello: function () {
+  sayHello() {
     return `Hello, my name is ${this.name}`
   },
   sayGoodbye() {
     return 'Goodbye!';
   }
 };
+
+let friend = {
+  name: 'Night'
+};
+
+friend.sayHello = person.sayHello;
 
 let day = 'Monday'
 
@@ -37,3 +43,4 @@ person.hobbies = ['taekwondo'];
 console.log(person.hobbies);
 console.log(person.sayHello());
 console.log(person.sayGoodbye());
+console.log(friend.sayHello());
