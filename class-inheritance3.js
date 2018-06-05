@@ -3,9 +3,11 @@ class HospitalEmployee {
       this._name = name;
       this._remainingVacationDays = 20;
     }
+    
     get name() {
       return this._name;
     }
+    
     get remainingVacationDays() {
       return this._remainingVacationDays;
     }
@@ -15,3 +17,13 @@ class HospitalEmployee {
     }
   }
   
+  class Nurse extends HospitalEmployee {
+    constructor(name, certifications) {
+          super(name);
+      super(remainingVacationDays);
+      this._certifications = certifications;
+    }
+    
+  }
+  
+  const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics'])
