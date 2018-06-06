@@ -41,3 +41,15 @@ export let availableAirplanes = [
   
   
   // export {availableAirplanes, flightRequirements, meetsStaffRequirements};   not needed anymore as exported as soon as variables are declared 
+
+
+
+
+
+
+// practice iterating over something elements etc
+  function something () {
+      amountOfSomething.forEach(function(element){
+          console.log(element);
+      })
+  }
